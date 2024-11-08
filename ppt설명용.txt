@@ -1,0 +1,8 @@
+설계
+- 기본적으로  구글과 마이크로소프트 회사를 설명하며 기본적인 빅데이터 활용 서비스인 
+BigQuery, DataFlow, DataProc, Storege, Cloud AI Platform 등을 설명합니다(with cloud Run은 부가 설명). 
+
+12페이지
+두 패턴에 대해서 설명하겠습니다.
+
+중앙 데이터 레이크, 부서 데이터 마트패턴은 조직의 과거 데이터를 
