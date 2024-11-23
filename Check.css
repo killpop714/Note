@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+
+body{
+    background-color: black;
+}
+
+label{
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+
+    border-radius: 50%;
+    border-color: green;
+
+    animation: rotate 1.2s linear infinite;
+}
+
+
+label #circle{
+    display: none;
+} 
+input:checked ~label #circle{
+    display: block;
+}
+label #circle:after{
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 125px;
+    top: 0%;
+    left: 0;
+    border-radius: 50%;
+    background-color: green;
+    animation-delay: 2s;
+    
+}
+label #circleIcon
+{
+    display: none;
+}
+
+input:checked ~label #circleIcon{
+    display:  block;
+}
+
+input:checked ~label{
+    animation: none;
+    border-color: aqua;
+    animation: opacityEnable 1s ease-out;
+}
+
+label #circleIcon:after{ 
+    position: absolute;
+    content: "";
+    height: 56px;
+    width: 28px;
+    top: 50%;
+    left: 30px;
+    transform:scaleX(-1)rotate(135deg);
+    border-right: 4px solid aqua;
+    border-top: 4px solid aqua;
+    transform-origin: left top;
+    animation: checkan 0.8s ease;
+} 
+
+
+@keyframes checkan
+{
+    0%{
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    20%{
+        height: 0;
+        width: 28px;
+        opacity: 1;
+    }
+    40%{
+        height: 56px;
+        width: 28px;
+        opacity: 1;
+    }
+    100%{
+        height: 56px;
+        width: 28px;
+        opacity: 1;
+    }
+}
+
+@keyframes opacityEnable{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* @keyframes rotate{
+    
+    100%{
+        transform: rotate(360deg);
+    }
+
+} */
+
