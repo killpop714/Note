@@ -1,16 +1,8 @@
-@font-face{
-    font-family: "SA";
-    font-weight: 100%;
-    src: local("C:/Windows/Fonts/210 버터R SQUARE.TTF");
-    format('truetype');
-}
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Popins',sans-serif;
+    font-family: 'SA';
 }
 html,body{
     display: grid;
@@ -102,18 +94,17 @@ label{
 
 h1{
     position: absolute;
-    font-family: "SA", arial;
     top:57.5%;
     left: 45.6%;
     color:white;
-
+}
     /* animation: opacityEnable 5s;
     animation-delay: 3s; */
-}h1:hover{
+/*}h1:hover{
     display: block;
     animation: opacityEnable 5s;
     animation-delay: 3s;
-}
+}*/
 
 @keyframes checkan{
     0%{
