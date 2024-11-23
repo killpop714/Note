@@ -1,14 +1,22 @@
 
 
-function SetCheck(){
-    var start = document.querySelector("label");
-    var end = document.querySelector("#circle")
-    if(start.addEventListener("animationstart",listener,false))
-    {
-        {
-    }
-    
+var la =true;
+
+const btn = document.querySelector("#btn");
+const Gcircle = document.querySelector("#circle");
+
+
+
+btn.addEventListener("click",a);
+
+function a(){
+    document.getElementById("circle").style.display = "block";
+    document.getElementById("circleIcon").style.display = "block";
 }
+
+
+    
+
 
 
 

@@ -1,3 +1,10 @@
+@font-face{
+    font-family: "SA";
+    font-weight: 100%;
+    src: local("C:/Windows/Fonts/210 버터R SQUARE.TTF");
+    format('truetype');
+}
+
 
 *{
     margin: 0;
@@ -9,78 +16,106 @@ html,body{
     display: grid;
     height: 100%;
     place-items: center;
-}
-
-
-body{
     background-color: black;
 }
 
-label{
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    top: 50%;
-    left: 50%;
-    display: inline-block;
-
-    border-radius: 50%;
-    border-color: green;
-
-    animation: rotate 1.2s linear infinite;
-}
-
-
-label #circle{
+#grayBack{
     display: none;
-} 
-input:checked ~label #circle{
+}
+input:checked ~#grayBack{
     display: block;
 }
-label #circle:after{
+#grayBack:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    background-color: gray;
+
+
+    animation: back 200ms ease-out;
+}
+
+@keyframes back{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}
+
+
+label{
+    display: none;
+}
+
+#circle{
+    position: absolute;
+    display: none;
+
+}#circle:after{
     position: absolute;
     content: "";
     width: 125px;
     height: 125px;
-    top: 0%;
-    left: 0;
+    top: -45px;
+    left: -60px;
     border-radius: 50%;
-    background-color: green;
-    animation-delay: 2s;
+    background-color: rgb(0, 150, 0);
+
+    animation: Pong 200ms ease-out
     
 }
-label #circleIcon
-{
+@keyframes Pong{
+    0%{
+        transform: scale(0.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+#circleIcon{
+    position: absolute;
     display: none;
-}
-
-input:checked ~label #circleIcon{
+}input:checked ~ #circleIcon{
     display:  block;
-}
-
-input:checked ~label{
-    animation: none;
-    border-color: aqua;
-    animation: opacityEnable 1s ease-out;
-}
-
-label #circleIcon:after{ 
+}#circleIcon:after{ 
     position: absolute;
     content: "";
     height: 56px;
     width: 28px;
-    top: 50%;
-    left: 30px;
+    top: 20px;
+    left: -30px;
     transform:scaleX(-1)rotate(135deg);
-    border-right: 4px solid aqua;
-    border-top: 4px solid aqua;
+    border-right: 7px solid white;
+    border-top: 7px solid white;
     transform-origin: left top;
     animation: checkan 0.8s ease;
 } 
 
+h1{
+    position: absolute;
+    font-family: "SA", arial;
+    top:57.5%;
+    left: 45.6%;
+    color:white;
 
-@keyframes checkan
-{
+    /* animation: opacityEnable 5s;
+    animation-delay: 3s; */
+}h1:hover{
+    display: block;
+    animation: opacityEnable 5s;
+    animation-delay: 3s;
+}
+
+@keyframes checkan{
     0%{
         height: 0;
         width: 0;
@@ -103,18 +138,7 @@ label #circleIcon:after{
     }
 }
 
-@keyframes opacityEnable{
-    0%{
-        opacity: 0;
 
-    }
-    50%{
-        
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 
 
