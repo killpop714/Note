@@ -1,3 +1,10 @@
+@font-face{
+    font-family: "SA";
+    font-weight: 100%;
+    src:url(../../Black.ttf)
+    format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;

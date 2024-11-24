@@ -1,6 +1,6 @@
 @font-face{
     font-family: "SA";
     font-weight: 100%;
-    src: url("c:\Windows\Fonts\훈나무그늘M.TTF")
+    src:url(../../../../../Windows/Fonts/훈고딕굴림R.TTF)
     format('truetype');
 }
