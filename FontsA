@@ -1,6 +1,0 @@
-@font-face{
-    font-family: "SA";
-    font-weight: 100%;
-    src:url(../../../../../Windows/Fonts/훈고딕굴림R.TTF)
-    format('truetype');
-}
