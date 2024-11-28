@@ -24,7 +24,7 @@ function linedraw(){
     const Canvas = document.querySelector("canvas");
     let $draw = Canvas.getContext('2d');
 
-
+    
     
     $draw.fillStyle ="red";
    $draw.fillRect(0,0,30,20)
