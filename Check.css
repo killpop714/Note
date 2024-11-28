@@ -5,6 +5,14 @@
     format('truetype'); 
 } */
 
+canvas{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: black;
+    border-radius: 50%;
+}
+
 *{
     margin: 0;
     padding: 0;

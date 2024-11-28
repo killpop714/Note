@@ -20,5 +20,24 @@ function a(){
     
 
 
+function linedraw(){
+    const Canvas = document.querySelector("canvas");
+    let $draw = Canvas.getContext('2d');
 
+
+    
+    $draw.fillStyle ="red";
+   $draw.fillRect(0,0,30,20)
+
+   $draw.beginPath();
+   $draw.strokeStyle ="red"
+   $draw.moveTo(0,0)
+   $draw.lineWidth=20;
+   $draw.lineTo(50,50);
+   $draw.stroke();
+
+
+}
+
+document.addEventListener("mousedown",linedraw);
 
