@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="se.js"></script>
 </head>
 <body>
-    <form method="POST" action="/signup">
-        <label for="username">아이디: </label><input type="text" name="username">
-        <br>
-        <label for="name">이름: </label><input type="text" name="name">
-        <br>
-        <button>회원가입</button>
-    </form>
+    <div id="screen" class="waiting">
 
-    
+    </div>
+    <div id="result">
+    </div>
+    <input id="id" type="text"/>
+    <input id="pwd" type="password"/>
+    <button id="login-btn">회원가입</button>
+
+    <script type="module" src="42Signup.js"></script>
 </body>
 </html>
