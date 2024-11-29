@@ -2,15 +2,13 @@ const Id = window.localStorage;
 const password =window.localStorage;
 
 //일반 데이터
-let Id_data ="";
+let Id_data;
 let Pw_data;
-const Flowers =[{name:"철쭉",language:"사랑의 즐거움"},{name:"백목련",language:"이루지 못할 사랑"}]//[{name:[{철쭉:"","백목련","장미","개나리","백일홍","참꽃"}]}]
+
 
 //입력 함수
 const Id_Input = ((event) =>{
     Id_data = event.target.value;
-    console.log("작동")
-    console.log(Id_data)
 }) 
 
 const Pw_Input = ((event) =>{

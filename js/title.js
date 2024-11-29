@@ -15,3 +15,4 @@ $Pw_input.addEventListener('input',data.Pw_Input);
 $sign.addEventListener('click',()=>{
     location.href = "http://127.0.0.1:5500/Signup.html"
 })
+
