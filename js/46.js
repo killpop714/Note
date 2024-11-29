@@ -8,13 +8,15 @@ const $P5 =document.querySelector('#p5');
 const $P6 =document.querySelector('#p6');
 
 
-
-
-
-
 $P1.addEventListener('input',data.Input)
 $P2.addEventListener('input',data.Input)
 $P3.addEventListener('input',data.Input)
 $P4.addEventListener('input',data.Input)
 $P5.addEventListener('input',data.Input)
 $P6.addEventListener('input',data.Input)
+
+
+console.log(data.getRandom(1,7));
+
+data.function_46($P1);
+
