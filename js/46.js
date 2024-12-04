@@ -7,6 +7,8 @@ const $P4 =document.querySelector('#p4');
 const $P5 =document.querySelector('#p5');
 const $P6 =document.querySelector('#p6');
 
+data.Datafact($P1,$P2,$P3,$P4,$P5,$P6)
+
 
 $P1.addEventListener('input',data.Input)
 $P2.addEventListener('input',data.Input)

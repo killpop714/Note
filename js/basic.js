@@ -5,6 +5,8 @@ const Flowers =[{name:"철쭉",language:"사랑의 즐거움",position:"강원�
 
     let input;
     let Flag =false;
+
+    const Flowers_p=[];
     const function_46 = (Problem) =>{
         while(Flag==false)
         {
@@ -26,6 +28,14 @@ const Flowers =[{name:"철쭉",language:"사랑의 즐거움",position:"강원�
         }
     }
 
+    const Datafact = (p1,p2,p3,p4,p5,p6) =>
+    {
+        for(let i; i<6; i++)
+        {
+            Flowers_p[i] = p+`${i}`
+        }
+    }
+
     const Input = ((event)=>{
         input = event.target.value;
         
@@ -40,4 +50,4 @@ const Flowers =[{name:"철쭉",language:"사랑의 즐거움",position:"강원�
 
     
 
-export default{Flowers,getRandom,function_46, Input};
+export default{Flowers,getRandom,function_46, Input,Datafact};
